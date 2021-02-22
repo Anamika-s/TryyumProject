@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script>
+        function add(a) {
+            console.log(a);
+        }
+        //add(10);
+        //add(20);
+
+        function add1(...a) {
+            console.log(a);
+        }
+
+        //add1(10);
+        //add1(10, 20, 30, 40);
+
+        //var x = [10, 20, 30];
+        //var y = x;
+        //console.log(x);
+        //console.log(y);
+        //x[0] = 100;
+        //console.log(x);
+        //console.log(y);
+
+        // Spread oprerator is used for shallow copy
+
+        var x = [10, 20, 30];
+        var y = [...x];
+        console.log(x);
+        console.log(y);
+        x[0] = 100;
+        console.log(x);
+        console.log(y);
+
+        var c = [...x, ...y];
+        console.log(c);
+
+        var d = [1, ...x, ...y, 90];
+        console.log(d);
+
+        var c = { courseName: "C#", duration: 90 };
+        var d = { ...c };
+        console.log(c);
+        console.log(d);
+        c.courseName = "Java";
+        console.log(c);
+        console.log(d);
+
+
+
+
+
+
+        //var arr1 = [1, 2, { name: "Ajay" }];
+        //var arr2 = arr1;
+        //arr1[0] = 10000;
+        //arr1[2].name = "Deepak";
+        //console.log(arr1);
+        //console.log(arr2);
+        //arr3 = arr1.concat(arr2);
+        //console.log("Arr 3 is ");
+        //arr1[0] = 20000;
+        //arr1[2].name = "NDeepak";
+        //    console.log(arr3);
+        //arr3 = [...arr1, ...arr2];
+        //arr1[0] = 8000;
+        //arr1[2].name = "ODeepak";
+        //console.log(arr3);
+        ////const rec =
+        //    [{
+
+            
+        //    name: "Ajay",
+        //    address: "Delhi",
+        //    ph:
+        //    {
+        //        mobile: "909",
+        //        land: "9097"
+        //    }
+        //    },
+        //        {
+
+
+        //            name: "Ajay",
+        //            address: "Delhi",
+        //            ph:
+        //            {
+        //                mobile: "909",
+        //                land: "9097"
+        //            }
+        //        },
+        //        {
+
+
+        //            name: "Ajay",
+        //            address: "Delhi",
+        //            ph:
+        //            {
+        //                mobile: "909",
+        //                land: "9097"
+        //            }
+        //        }];
+
+        //rec.map(r => {
+        //   var { name, address, ph } = r;
+        //    console.log(r.name, r.address, r.ph.mobile);
+        //});
+
+        ////var name = rec.name;
+        //console.log(name);
+
+        //var {name, address , ph  } = rec;
+        //console.log(address);
+        //console.log(ph.mobile);
+      //  var a = [10, 20, 30];
+      //  var b = a;
+      //  //console.log(a);
+      //  //console.log(b);
+      //  //a[0] = 100;
+      //  //console.log(a);
+      //  //console.log(b);
+      //  var a1 = [10, 20, 30];
+      //  var b1 = [...a1];
+      ////  console.log(a1);
+      ////  console.log(b1);
+      //  a1[0] = 100;
+      //  //console.log(a1);
+      //  //console.log(b1);
+      //  b1 = [10, ...a1, 2, 3];
+      //  //console.log(b1);
+
+      //  var c1 = [...a1, ...b];
+      //  //console.log(c1);
+      //  var c = { courseName: "C#", duration: 90 };
+      //  var d = { ...c };
+      //  console.log(c);
+      //  console.log(d);
+      //  c.courseName = "Java";
+      //  console.log(c);
+      //  console.log(d);
+
+         
+
+            //function A1(...a)
+            //    {
+            //    console.log("Va;ue os a is " + a);
+            //    }
+            //    A1(10,23,23,32,89);
+    </script>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
